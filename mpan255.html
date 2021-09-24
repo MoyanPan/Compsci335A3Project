@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+<title>Home</title>
+<link rel = "stylesheet" href = "mpan255.css">
+<script src="mpan255.js"></script>
+</head>
+<body>
+  <div id="introtext">
+    <div class = "left">
+      <img style="max-width:620px;width:100%" src = "http://localhost:5000/api/GetLogo"/>
+    </div>
+    <div class="right">
+      <div>
+        <button class = "buttongroup" onclick="hideshow(homepage);clean()">&#127968;</button>
+        <button class = "buttongroup" onclick="hideshow(staffpage);staffs();clean()">&#128240;</button>
+        <button class = "buttongroup" onclick="hideshow(shoppage); items();clean()">&#128722;</button>
+        <button class = "buttongroup" onclick="hideshow(registrationpage);clean()">&#128105;</button>
+        <button class = "buttongroup" onclick="hideshow(bookpage);displaycomment();clean()">&#128214;</button>
+        <button class = "buttongroup" type = "button" id = "loginbutton" onclick="loginbutton();clean()">click to login</button>
+        <h1> Southern Hemisphere Institute of Technology</h1>
+        <h2> Southern Hemisphere Institute of Technology is a premiere establishment providing world-class higher education right here in New Zealand.</h2>
+        <hr style="border: 1px dashed rgb(0, 0, 0);"/>
+      </div>
+    </div>
+  </div>
+  <div  class = "page" id = "homepage" style = "display:block">
+
+    <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin mollis libero ut tempor. Curabitur id semper nisi, 
+      a porttitor mauris. Cras sit amet nulla purus. Phasellus ornare molestie leo a malesuada. Sed luctus accumsan facilisis. Etiam 
+      et volutpat sapien, at mattis augue. Curabitur luctus ante eu vulputate euismod. Cras tincidunt sodales commodo. Class aptent taciti
+       sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque egestas lectus nisl, et rutrum urna sodales non.
+        Vivamus ultricies, augue quis convallis vehicula, nunc arcu imperdiet justo, fringilla hendrerit purus purus quis felis.
+    </p>
+  
+    <p>Pellentesque auctor, neque vel ultricies pharetra, ex odio congue ex, eget rutrum libero ex a dolor. Ut hendrerit felis vel aliquet dignissim.
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a egestas lorem. Phasellus varius est eget feugiat pretium. Integer ultrices odio ac
+        quam aliquet vulputate. Donec justo diam, tincidunt quis lobortis sit amet, sodales aliquet erat. Nullam odio ante, ornare quis interdum a, consectetur 
+        et risus. Suspendisse sit amet bibendum augue. Vestibulum in lorem laoreet, aliquet quam eu, condimentum est. Praesent a ligula metus. Donec scelerisque p
+        urus sit amet massa cursus, at hendrerit orci porttitor. Sed auctor volutpat urna, a tristique eros rhoncus non. Etiam porta porta ipsum, sit amet variu
+        s sapien ornare a. Phasellus vel pellentesque massa.</p>
+  </div>
+
+
+
+
+
+
+
+  <div id = "staffpage" style = "display:none;flex-direction: column;">
+    <div>
+      <h1 style=" font-size: 60px; border: 5px solid rgb(0, 0, 0); text-align: center; margin-left:30px;">Staff members</h1>
+      <hr style="width: 100%;">
+    </div>
+    <div id = "stafftable"  style="margin-top: 2%; display: flex; flex-direction: column; font-size: 24px;">
+    </div>
+
+  </div>
+
+
+
+  <div id = "shoppage" style = "display:none; display: flex; flex-direction: column;">
+    <div>
+      <input type="text" oninput="search()" id = "searchbar" placeholder="Search.."/>
+    </div>
+    <div id = "itemtable"  style="margin-top: 2%;">
+    </div>
+
+  </div>
+
+
+  <div id = "loginpage" style = "display:none;align-items: center; flex-direction: column;">
+    <p style="text-align: center; font-size: 60px; border: 5px solid black">Login Page</p>
+    <div>
+        <label>
+          Username-<input type="text" id="loginname" />
+        </label>
+        
+        <label>
+          Password-<input type="password" id="loginpassword" />
+        </label>
+        
+    </div>
+    <button class = "registrationbutton" onclick="login()">Login</button>
+  </div>
+
+
+
+
+  <div  style = "display:none;align-items: center; flex-direction: column;" id = "registrationpage">
+    <p style="text-align: center; font-size: 60px; border: 5px solid black">User Registration</p>
+    <div>
+        <label>
+          Username-<input type="text" style="width: 200px; height: 40px;" id="rname" />
+        </label>
+        
+        <label>
+          Password-<input style="width: 200px; height: 40px;" type="password" id="password" />
+        </label>
+
+        <label>
+          Address-<input style="width: 200px; height: 40px;" type="text" id="address" />
+        </label>
+
+        
+    </div>
+    <button class = "registrationbutton" onclick="registration()">Submit</button>
+  </div>
+
+  <div  id = "bookpage"  style = "display:none; margin-top: 5%;align-items: center;">
+
+    <div class="firstpage",>
+        <label style="font-size: 30px;">Enter name</label>
+        <input type="text" id="username" style="width: 900px;height: 80px;"> 
+    </div>
+    <label style="font-size: 30px;">Enter comment</label>
+    <input type="text" id="comment" style="width: 900px;height: 80px;margin-top: 1%;margin-left: 9%;"> 
+    <button class = "commentbutton" onclick="writecomment()" >submit</button>
+
+
+  <div class="twopages">
+      <p id = "CommentContent" style = "white-space: pre-wrap";>
+      </p>
+  </div>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+

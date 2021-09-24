@@ -1,0 +1,103 @@
+#introtext {
+
+  width: 110%;
+  height: 400px;
+  display: flex;
+  border-color: rgb(0, 0, 0);
+  border-style:solid;
+
+}
+
+.left, .right{
+   display: inline-block;
+   box-sizing: border-box;
+   width: 50%;
+   height: 100%;
+}
+
+
+
+#purchasebutton{
+  width: 200px;
+  height: 100px;
+}
+
+
+
+
+
+.page {
+  position: fixed;
+  height:200px; 
+  width:2500px;
+  top: 50%;
+  line-height: 1.8;
+  max-width: 70%; 
+  font-size: 21px;
+
+}
+
+
+.buttongroup{
+  height:100px;
+  width:100px;
+  margin-left :0% ;
+  font-size : 50px;
+}
+#loginbutton{
+  height:80px;
+  width:300px;
+  margin-left :15%;
+}
+
+
+#registrationpage{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#bookpage {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#itemimg{
+  width: 30%;
+  height:20%;
+  object-fit: contain
+}
+
+
+
+
+
+.commentbutton{
+  height:50px;
+  width:110px;
+  font-size : 33px;
+
+}
+
+.registrationbutton{
+  height:80px;
+  width:130px;
+  font-size : 33px;
+  margin-top: 50px;
+ 
+
+}
+
+#searchbar{
+  width: 90%; 
+  height: 40px;
+  margin-top: 40px;
+  display: none;
+}
+
+
+
+
+
